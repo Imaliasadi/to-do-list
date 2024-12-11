@@ -1,0 +1,80 @@
+body{
+    background: url(Jowhareh_galleries_poster_aa4f9933-ca7f-4c86-806a-a8f2db68c822.jpeg) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-task-container{
+    width: 60vw;
+    background-color: #fff;
+    display: flex;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 10px lightblue;
+}
+
+input{
+    flex: 5;
+    padding: 6px;
+    border-radius: 6px;
+    border: solid lightslategray 1px;
+}
+
+.add-task{
+    background-color: #ffffff00;
+    border: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    transition: .3s;
+}
+
+.add-task:hover{
+    color: rgb(0, 140, 255);
+}
+
+.task{
+    display: flex;
+    margin-top: 6px;
+    background-color: bisque;
+    border-radius: 6px;
+    padding: 10px;
+   animation: show .1s ease-in;
+}
+
+.task li{
+    list-style: none;
+    flex: 5;
+}
+
+.check-task{
+    border: none;
+    background-color: rgba(255, 222, 173, 0);
+    cursor: pointer;
+    transition: .3s;
+}
+.check-task:hover{
+    color: aquamarine;
+}
+.delete-task{
+    border: none;
+    background-color: rgba(255, 222, 173, 0);
+    cursor: pointer;
+    transition: .3s;
+}
+.delete-task:hover{
+    color: red;
+}
+
+@keyframes show {
+    from {
+        transform: scale(0%);
+      }
+    
+      to {
+        transform: scale(100%);
+      }
+}
